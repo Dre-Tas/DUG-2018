@@ -68,10 +68,14 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="ExportIFC.cs" />
+    <Compile Include="Hello.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DUG-2018.addin" />
+    <Resource Include="Resources\hello.png" />
+    <Resource Include="Resources\share.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

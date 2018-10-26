@@ -42,7 +42,7 @@ namespace DUG_2018
             pushButton.ToolTip = "Say hi!";
             // Create an image object that will become the icon of the button
             BitmapImage pbUImage = new BitmapImage(new Uri
-                ("pack://application:,,,/DSUG2018;component/Resources/hello.png"));
+                ("pack://application:,,,/DUG-2018;component/Resources/hello.png"));
             // Assign image to the button as a LargeImage
             pushButton.LargeImage = pbUImage;
         }
