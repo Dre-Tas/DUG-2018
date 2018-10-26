@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command DUG-2018</Text>
+    <Description>Some description for DUG-2018</Description>
+    <Assembly>DUG-2018.dll</Assembly>
+    <FullClassName>DUG_2018.Command</FullClassName>
+    <ClientId>7c97b16e-49bb-4d0f-b2d8-a7272e86a437</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application DUG-2018</Name>
+    <Assembly>DUG-2018.dll</Assembly>
+    <FullClassName>DUG_2018.App</FullClassName>
+    <ClientId>37438603-a00b-4abd-9021-93f23197b93a</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
