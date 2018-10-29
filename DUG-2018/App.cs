@@ -27,7 +27,7 @@ namespace DUG_2018
 
             // Add new ribbon panels
             RibbonPanel ribbonPanelHello =
-                application.CreateRibbonPanel(tabName, "First");
+                application.CreateRibbonPanel(tabName, "Just a test");
 
             // Create button object
             PushButtonData buttonData = new PushButtonData(
@@ -45,6 +45,27 @@ namespace DUG_2018
                 ("pack://application:,,,/DUG-2018;component/Resources/hello.png"));
             // Assign image to the button as a LargeImage
             pushButton.LargeImage = pbUImage;
+
+            // Add new ribbon panels
+            RibbonPanel ribbonPanelExports =
+                application.CreateRibbonPanel(tabName, "Exports");
+
+            // Create button object
+            PushButtonData expButtonData = new PushButtonData(
+                "cmdIFC",
+                "Export to IFC",
+                thisAssemblyPath,
+                "DUG_2018.ExportIFC");
+
+            // Add the created button object to the panel
+            PushButton expPushButton = ribbonPanelExports.AddItem(expButtonData) as PushButton;
+            // Define tooltip that will appear when hovering on the button
+            expPushButton.ToolTip = "Export views to IFC";
+            // Create an image object that will become the icon of the button
+            BitmapImage pbExpImage = new BitmapImage(new Uri
+                ("pack://application:,,,/DUG-2018;component/Resources/share.png"));
+            // Assign image to the button as a LargeImage
+            expPushButton.LargeImage = pbExpImage;
         }
 
         public Result OnStartup(UIControlledApplication application)
