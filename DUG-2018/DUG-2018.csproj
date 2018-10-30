@@ -69,7 +69,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Command.cs" />
-    <Compile Include="ExportIFC.cs" />
+    <Compile Include="ExportNWC.cs" />
     <Compile Include="Hello.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

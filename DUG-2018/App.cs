@@ -53,14 +53,14 @@ namespace DUG_2018
             // Create button object
             PushButtonData expButtonData = new PushButtonData(
                 "cmdIFC",
-                "Export to IFC",
+                "Export to NWC",
                 thisAssemblyPath,
-                "DUG_2018.ExportIFC");
+                "DUG_2018.ExportNWC");
 
             // Add the created button object to the panel
             PushButton expPushButton = ribbonPanelExports.AddItem(expButtonData) as PushButton;
             // Define tooltip that will appear when hovering on the button
-            expPushButton.ToolTip = "Export views to IFC";
+            expPushButton.ToolTip = "Export views to NWC";
             // Create an image object that will become the icon of the button
             BitmapImage pbExpImage = new BitmapImage(new Uri
                 ("pack://application:,,,/DUG-2018;component/Resources/share.png"));
