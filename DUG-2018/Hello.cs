@@ -21,10 +21,17 @@ namespace DUG_2018
           ref string message,
           ElementSet elements)
         {
-            // TaskDialogs are pop-up messages that can also be customised
-            // with buttons that do things
-            TaskDialog.Show("Greetings", "Hello, DSUG!");
+            try
+            {
+                // TaskDialogs are pop-up messages that can also be customised
+                // with buttons that do things
+                TaskDialog.Show("Greetings", "Hello, DSUG!");
 
+            }
+            catch (Exception)
+            {
+                return Result.Failed;
+            }
             // If everything's fine, tell Revit it succeeded.
             return Result.Succeeded;
         }
