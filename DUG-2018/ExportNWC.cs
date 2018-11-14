@@ -64,7 +64,7 @@ namespace DUG_2018
                     MessageBoxButtons.OK,
                     // Set symbol to show in window
                     MessageBoxIcon.Information);
-                return Result.Failed;
+                return Result.Cancelled;
             }
 
             // Create options object
