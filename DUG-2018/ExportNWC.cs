@@ -93,14 +93,13 @@ namespace DUG_2018
                     // Export view. The method requires a path where to save,
                     // the name of the file to save and any option
                     doc.Export(folder, v.Name + ".nwc", options);
+                    // Add one to the counter
+                    count++;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString(), "Ooops, something happened");
                 }
-
-                // Add one to the counter
-                count++;
             }
 
             // Recap to user telling the process is done
